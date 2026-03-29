@@ -11,6 +11,6 @@ public abstract class Converter {
 
     ImageIO.write(outputImage, "PNG", new File(outputFileName));
   }
-  
+  protected abstract void processImage(BufferedImage input, BufferedImage output);
   
 }
