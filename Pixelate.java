@@ -12,7 +12,6 @@ public class Pixelate extends Converter {
         for (int blockY = 0; blockY < height; blockY += BLOCK_SIZE) {
             for (int blockX = 0; blockX < width; blockX += BLOCK_SIZE) {
 
-                // Compute the average colour within this block
                 int sumA = 0, sumR = 0, sumG = 0, sumB = 0, count = 0;
 
                 for (int dy = 0; dy < BLOCK_SIZE && blockY + dy < height; dy++) {
