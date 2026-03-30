@@ -3,8 +3,8 @@ import java.awt.image.BufferedImage;
 public class Rotate extends Converter {
   @Override
   protected BufferedImage processImage(BufferedImage image) {
-    int scrwidth=getWidth(image);
-    int scrheight=getHeight(image);
+    int scrWidth=getWidth(image);
+    int scrHeight=getHeight(image);
     BufferedImage result = createBlankImage(srcHeight, srcWidth);
 
     for (int y = 0; y < srcHeight; y++) {
